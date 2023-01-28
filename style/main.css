@@ -1,0 +1,54 @@
+.categoryPage{
+    width:600px;
+    margin:0 auto;
+}
+.sidebar{
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    
+}
+.sidebar ul{
+   list-style:none;
+   padding:0 !important;
+   margin-bottom:5rem;
+
+}
+.sidebar
+ul 
+li{
+    border-bottom:1px solid rgba(206,239,235,0.5);
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.sidebar ul li img{
+    height: 30px;
+    width:30px;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+.product img{
+    width:100%
+}
+.product{
+    border-radius: 5px;
+}
+.product p,span{
+    margin: 0;
+}
+.product span{
+    font-weight: 600;
+}
+.footer{
+   position: fixed;
+   bottom: 0;
+   width: 100%;
+   background-color: #de3726;
+   color: white;
+   text-align: center;
+   padding:20px;
+   width: 600px;
+}
