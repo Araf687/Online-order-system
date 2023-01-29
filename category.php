@@ -62,8 +62,10 @@
                     <div class="container">
                         <div class="row">
                             <?php 
-                                $category=$_GET['cat'];
-                                settype($category, "integer");
+                               $category=1;
+                               if(isset($_GET['cat'])){
+                                    $category=$_GET['cat'];
+                                    settype($category, "integer");}
 
                                 $fetchCatQuerry="SELECT c.cat_id, c.cat_name, p.prod_id, p.prod_name, p.prod_price, p.prod_image, p.description 
                                 FROM category c, product p WHERE p.prod_cat=c.cat_id AND c.cat_id=$category ORDER BY c.cat_id DESC";
