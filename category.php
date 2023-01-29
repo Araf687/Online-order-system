@@ -91,7 +91,11 @@
                             ?>
                                 <div class="col-md-6 px-2">
                                     <div class="border product p-2">
-                                        <img src=<?php echo "images/".$prod_cat."/".$prod_image; ?> class="prodImg" alt="">
+                                        <?php
+                                        $img="images/".$prod_cat."/".$prod_image;
+                                        echo "<img src=\"$img\" class='prodImg' alt=''>";
+                                        ?>
+                                        
                                         <span><?php echo $prod_name; ?></span>
                                         <p><?php echo $description; ?></p>
                                         <div class="d-flex">
